@@ -1,0 +1,94 @@
+.header
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    text-align: center
+    &__logo
+        padding: 85px 0 42px 0
+    &__heading
+        
+        h1
+            font-weight: 500
+            font-size: 16px
+            color: $color-gray
+            letter-spacing: 1.2px
+            @media screen and ( min-width: 800px )
+                font-size: 40px
+            span
+                font-weight: 700
+                color: $color-veryDarkBlue
+    &__description
+        margin: 22px 0 33px 0
+        font-size: 12px
+        color: $color-veryDarkBlue
+        @media screen and ( min-width: 800px )
+                font-size: 18px
+    &__form
+        display: flex
+        flex-direction: column
+        width: 280px
+        // background: red
+        @media screen and ( min-width: 800px )
+            flex-direction: row
+            width: 90%
+        input
+            padding: 14px 0 15px 24px
+            color: $color-paleBlue
+            border: 1px solid $color-paleBlue
+            border-radius: 25px
+            flex-grow: 4
+            @media screen and ( min-width: 800px )
+                font-size: 14px
+                width: 444px
+        button
+            margin-top: 10px
+            padding: 14px 0 15px 0
+            color: #fff
+            background: $color-blue
+            border: none
+            border-radius: 25px
+            box-shadow: 0px 7px 10px rgba($color-blue, .2)
+            text-align: center
+            font-weight: 700
+            font-size: 12px
+            cursor: pointer
+            flex-grow: 2
+            @media screen and (min-width: 800px)
+                margin-top: 0
+                margin-left: 20px
+                padding: 14px 25px 15px 25px
+                font-size: 15px
+.dashboard
+    margin: 69px 0 120px 0
+    img
+        width: 100%
+.footer
+    display: flex
+    flex-direction: column
+    align-items: center
+    &__social
+        margin-bottom: 30px
+        a
+            display: inline-block
+            text-decoration: none
+        i
+            padding: 7px
+            margin-right: 13px
+            border: 1px solid $color-paleBlue
+            border-radius: 100%
+            color: $color-blue
+            width: 30px
+            text-align: center
+            // vertical-align: top
+            height: 30px
+            transition: background-color .2s linear, color .1s linear .2s
+            &:hover
+                background-color: $color-paleBlue
+                color: #fff
+    &__copy
+        font-size: 12px
+        color: $color-gray
+        margin-bottom: 40px
+        span
+            color: $color-blue
